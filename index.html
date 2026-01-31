@@ -108,7 +108,7 @@
 
     <a href="https://github.com/Elijah414"
        target="_blank"
-       class="btn btn-dark">
+       class="btn btn-success">
         View GitHub Repositories
     </a>
 </div>
@@ -230,6 +230,8 @@
             <li>Wazuh</li>
             <li>Snort IDS</li>
             <li>ELK Stack</li>
+            <li>OSSEC</li>
+            <li>Suricata</li>
           </ul>
         </div>
       </div>
@@ -292,7 +294,7 @@
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">FutureGuide</h5>
                         <p class="card-text flex-grow-1">A fullstack platform to track personal and professional growth with dashboards, goal creation, and task tracking.</p>
-                        <button class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#futureModal">Read More</button>
+                        <button class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#futureGuideModal">Read More</button>
                     </div>
                 </div>
             </div>
@@ -325,7 +327,7 @@
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">IDS/IPS Simulation</h5>
                         <p class="card-text flex-grow-1">Configured IDS/IPS with pattern matching algorithms to detect intrusions and evaluate detection accuracy.</p>
-                        <button class="btn btn-info text-white mt-auto" data-bs-toggle="modal" data-bs-target="#idsipsModal">Read More</button>
+                        <button class="btn btn-info text-white mt-auto" data-bs-toggle="modal" data-bs-target="#idsIpsModal">Read More</button>
                     </div>
                 </div>
             </div>
@@ -356,7 +358,8 @@
       <div class="modal-body">
         <h6><strong>Project Overview:</strong></h6>
         <p>
-          Developed as the first mini project at TechBridle, the Retirement Calculator helps users estimate future savings based on current age, monthly contributions, expected returns, and retirement age.
+          Developed as the first mini project at TechBridle, the Retirement Calculator helps users estimate future savings 
+          based on current age, monthly contributions, expected returns, and retirement age.
         </p>
 
         <h6><strong>Development Approach:</strong></h6>
@@ -393,141 +396,273 @@
 </div>
 
 
-<!-- FutureGuide Project Modal -->
-<div class="modal fade" id="futureModal" tabindex="-1" aria-labelledby="futureModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
+<!-- FutureGuide Modal -->
+<div class="modal fade" id="futureGuideModal" tabindex="-1" aria-labelledby="futureGuideModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header bg-success text-white">
-        <h5 class="modal-title" id="futureModalLabel">FutureGuide - Detailed Overview</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h5 class="modal-title" id="futureGuideModalLabel">FutureGuide - Full Stack Web Platform</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
       </div>
+
       <div class="modal-body">
-        <p><strong>Project Overview:</strong> Fullstack web application to help users track and plan personal and 
-          professional growth. Features goal creation, task tracking, and dashboards for progress visualization.</p>
 
-        <p><strong>Development Approach:</strong> Developed collaboratively in a team of 3. Worked on both frontend 
-          (React.js, Tailwind CSS) and backend (C# ASP.NET, MongoDB), including API integration and component development.</p>
+        <h6><strong>Objective</strong></h6>
+        <p>
+          FutureGuide is a web-based platform aimed at assisting students with career guidance, mentorship resources, and academic support.  
+          The project was designed to provide structured information and tools to help learners make informed academic and career decisions.
+        </p>
 
-        <p><strong>Challenges & Problem Solved:</strong> Managed user data efficiently, handled authentication, 
-          real-time updates, and asynchronous data fetching. Solved the problem of fragmented personal development 
-          tools by centralizing key functionalities.</p>
+        <h6><strong>Development</strong></h6>
+        <p>
+          This project was developed as a collaborative team initiative where I contributed to both frontend and backend development.
+        </p>
+        <ul>
+          <li>Frontend developed using <strong>React.js and TypeScript</strong> for a modern, scalable, and type-safe user interface.</li>
+          <li>Backend implemented using <strong>C# (.NET)</strong> to build RESTful APIs.</li>
+          <li><strong>MongoDB</strong> used as the database for flexible and efficient data storage.</li>
+          <li>Git and GitHub used for collaboration and version control.</li>
+        </ul>
 
-        <p><strong>What I Learned:</strong> Fullstack development, React state management, MongoDB schema design, 
-          team collaboration, API integration, agile development workflow, problem-solving, and scalability considerations.</p>
+        <h6><strong>Challenges</strong></h6>
+        <ul>
+          <li>Integrating React TypeScript frontend with C# backend services.</li>
+          <li>Designing API endpoints that matched evolving frontend requirements.</li>
+          <li>Coordinating work among team members and managing code conflicts.</li>
+        </ul>
 
-        <p><strong>Tech Stack:</strong> React.js, Tailwind CSS, C#, ASP.NET, MongoDB, RESTful APIs, Git/GitHub, Agile Workflow</p>
+        <h6><strong>Learnings</strong></h6>
+        <ul>
+          <li>Hands-on experience building real-world full-stack applications.</li>
+          <li>Practical use of TypeScript for structured and maintainable frontend code.</li>
+          <li>API development and database interaction using C# and MongoDB.</li>
+          <li>Agile teamwork and software project collaboration.</li>
+        </ul>
+
+        <h6><strong>Tech Stack</strong></h6>
+        <p>
+          React.js, TypeScript, C# (.NET), MongoDB, REST APIs, Git, GitHub
+        </p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
 </div>
 
-<!-- E-commerce Web App Modal -->
+
+<!-- E-commerce Modal -->
 <div class="modal fade" id="ecommerceModal" tabindex="-1" aria-labelledby="ecommerceModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
-      <div class="modal-header bg-warning text-dark">
-        <h5 class="modal-title" id="ecommerceModalLabel">E-commerce Web Application - Detailed Overview</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-header bg-warning text-white">
+        <h5 class="modal-title" id="ecommerceModalLabel">E-Commerce Web Application</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
       </div>
       <div class="modal-body">
-        <p><strong>Project Overview:</strong> Online shopping platform with user login, shopping cart, checkout system, 
-          and admin dashboard for managing products and orders.</p>
+        <h6><strong>Objective</strong></h6>
+        <p>
+          The goal was to build a secure e-commerce platform that allows users to browse products, 
+          manage carts, authenticate securely, and place orders.
+        </p>
 
-        <p><strong>Development Approach:</strong> Developed independently using React.js for frontend, Node.js + Express 
-          for backend, PostgreSQL for database, and JWT for authentication. Implemented cart persistence and admin functionalities.</p>
+        <h6><strong>Development</strong></h6>
+        <ul>
+          <li>Frontend built using React for dynamic UI.</li>
+          <li>Backend built with Node.js and Express.</li>
+          <li>JWT-based authentication for secure login and checkout.</li>
+          <li>PostgreSQL used for data persistence.</li>
+        </ul>
 
-        <p><strong>Challenges & Problem Solved:</strong> Synchronizing cart data between frontend and backend, 
-          securing authentication, and handling concurrent order submissions. Solved real-world problem of online shopping workflow.</p>
+        <h6><strong>Challenges</strong></h6>
+        <ul>
+          <li>Synchronizing cart data between frontend and backend.</li>
+          <li>Securing endpoints using JWT tokens.</li>
+          <li>Designing relational database schemas.</li>
+        </ul>
 
-        <p><strong>What I Learned:</strong> Fullstack development, JWT-based authentication, database schema design, 
-          REST API integration, and handling concurrency.</p>
+        <h6><strong>Learnings</strong></h6>
+        <ul>
+          <li>Secure authentication and authorization.</li>
+          <li>State management in frontend applications.</li>
+          <li>Backend API design and database integration.</li>
+        </ul>
 
-        <p><strong>Tech Stack:</strong> React.js, Node.js, Express.js, PostgreSQL, JWT, Git/GitHub, Bootstrap</p>
+        <h6><strong>Tech Stack</strong></h6>
+        <p>React, Node.js, Express, JWT, PostgreSQL, Git</p>
+      </div>
+       <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Hybrid Intrusion Detection Simulation Modal -->
-<div class="modal fade" id="hybridIDSModal" tabindex="-1" aria-labelledby="hybridIDSModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
+
+<!-- Hybrid IDS Research Modal -->
+<div class="modal fade" id="hybridIDSModal" tabindex="-1" aria-labelledby="hybridIdsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
+
       <div class="modal-header bg-danger text-white">
-        <h5 class="modal-title" id="hybridIDSModalLabel">Hybrid IDS Simulation - Detailed Overview</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h5 class="modal-title" id="hybridIdsModalLabel">Hybrid-Based Intrusion Detection Research Project</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
       </div>
+
       <div class="modal-body">
-        <p><strong>Project Overview:</strong> Simulated a hybrid-based Intrusion Detection System using Snort, OSSEC, 
-          and Kibana on separate VMs to monitor network attacks.</p>
 
-        <p><strong>Development Approach:</strong> Independently set up and configured IDS components, generated 
-          malicious traffic via an attacker VM, and analyzed detection accuracy and alerts.</p>
+        <h6><strong>Objective</strong></h6>
+        <p>
+          This project was conducted as part of my Honours research. The goal was to design and evaluate a 
+          hybrid-based Intrusion Detection System (IDS) by comparing the effectiveness of different 
+          pattern-matching algorithms in detecting network attacks.  
+          The research focused on improving detection accuracy and performance in real-time network environments.
+        </p>
 
-        <p><strong>Challenges & Problem Solved:</strong> Configuring multiple tools on separate VMs, handling 
-          real-time traffic analysis, and testing detection accuracy. Solved the problem of evaluating IDS effectiveness.</p>
+        <h6><strong>Development & Methodology</strong></h6>
+        <p>
+          The project involved setting up a simulated enterprise network environment using multiple virtual machines:
+        </p>
 
-        <p><strong>What I Learned:</strong> Network security, intrusion detection concepts, system 
-          integration, alert analysis, and tool configuration on Linux environments.</p>
+        <ul>
+          <li>An IDS VM configured with Snort and OSSEC for signature-based detection.</li>
+          <li>An attacker VM used to generate malicious traffic such as ARP spoofing and network scanning.</li>
+          <li>An ELK stack (Elasticsearch, Logstash, Kibana) for log collection and visualization.</li>
+          <li>Evaluation of different pattern-matching techniques including:</li>
+          <ul>
+            <li>Aho-Corasick Algorithm</li>
+            <li>Boyer-Moore Algorithm</li>
+            <li>Regular Expressions</li>
+          </ul>
+        </ul>
 
-        <p><strong>Tech Stack:</strong> Linux, Snort, OSSEC, Kibana, VirtualBox, Networking Concepts</p>
+        <p>
+          The system was tested using various attack simulations to determine which algorithm performed best 
+          in terms of speed, resource usage, and detection accuracy.
+        </p>
+
+        <h6><strong>Challenges</strong></h6>
+        <ul>
+          <li>Configuring multiple virtual machines to communicate in a controlled environment.</li>
+          <li>Generating realistic attack traffic for accurate evaluation.</li>
+          <li>Comparing algorithm efficiency using measurable performance metrics.</li>
+          <li>Interpreting IDS logs and fine-tuning detection rules.</li>
+        </ul>
+
+        <h6><strong>Learnings</strong></h6>
+        <ul>
+          <li>Deep understanding of intrusion detection systems and cybersecurity concepts.</li>
+          <li>Practical experience with Snort, OSSEC, and network security monitoring tools.</li>
+          <li>Knowledge of pattern-matching algorithms and their real-world applications.</li>
+          <li>Research methodology, data analysis, and technical report writing.</li>
+        </ul>
+
+        <h6><strong>Tech Stack & Tools</strong></h6>
+        <p>
+          Snort, OSSEC, ELK Stack, Kali Linux, VirtualBox, Python scripting, Pattern Matching Algorithms
+          (Aho-Corasick, Boyer-Moore, Regex), Networking Protocols
+        </p>
+
+      </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
 </div>
 
-<!-- IDS/IPS Simulation Modal -->
-<div class="modal fade" id="idsipsModal" tabindex="-1" aria-labelledby="idsipsModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
+
+<!-- IDS/IPS Modal -->
+<div class="modal fade" id="idsIpsModal" tabindex="-1" aria-labelledby="idsIpsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header bg-info text-white">
-        <h5 class="modal-title" id="idsipsModalLabel">IDS/IPS Simulation - Detailed Overview</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h5 class="modal-title" id="idsIpsModalLabel">IDS / IPS Implementation</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
       </div>
       <div class="modal-body">
-        <p><strong>Project Overview:</strong> Designed and tested IDS/IPS systems with pattern matching techniques 
-          like Aho-Corasick, Boyer-Moore, and Regex to detect intrusions.</p>
+        <h6><strong>Objective</strong></h6>
+        <p>
+          To design and test an intrusion detection and prevention environment capable of detecting and actively blocking malicious traffic.
+        </p>
 
-        <p><strong>Development Approach:</strong> Configured the detection systems on a dedicated IDS VM, simulated 
-          attacker traffic, and monitored alerts and logs for accuracy.</p>
+        <h6><strong>Development</strong></h6>
+        <ul>
+          <li>Snort configured as an Intrusion Detection System (IDS).</li>
+          <li>Suricata configured as an Intrusion Prevention System (IPS).</li>
+          <li>Rules written and tuned for real-time threat detection.</li>
+        </ul>
 
-        <p><strong>Challenges & Problem Solved:</strong> Ensuring precise detection without false positives, 
-          optimizing patterns, and log monitoring. Solved real-world problem of automated intrusion detection evaluation.</p>
+        <h6><strong>Challenges</strong></h6>
+        <ul>
+          <li>Balancing detection accuracy and false positives.</li>
+          <li>Rule optimization and performance tuning.</li>
+        </ul>
 
-        <p><strong>What I Learned:</strong> Pattern matching algorithms, log analysis, IDS/IPS configuration, 
-          and real-time monitoring.</p>
+        <h6><strong>Learnings</strong></h6>
+        <ul>
+          <li>Difference between IDS and IPS.</li>
+          <li>Hands-on network defense techniques.</li>
+          <li>Threat detection and mitigation strategies.</li>
+        </ul>
 
-        <p><strong>Tech Stack:</strong> Snort, OSSEC, Linux, Pattern Matching Algorithms, ELK Stack</p>
+        <h6><strong>Tech Stack</strong></h6>
+        <p>Snort, Suricata, Linux, Networking</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Deadlock Detection Simulation Modal -->
+
+<!-- Deadlock Modal -->
 <div class="modal fade" id="deadlockModal" tabindex="-1" aria-labelledby="deadlockModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header bg-secondary text-white">
-        <h5 class="modal-title" id="deadlockModalLabel">Deadlock Detection & Resolution Simulation - Detailed Overview</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h5 class="modal-title" id="deadlockModalLabel">Deadlock Detection & Resolution Simulation</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
       </div>
       <div class="modal-body">
-        <p><strong>Project Overview:</strong> Simulated deadlocks in multithreaded server environments and implemented 
-          detection and resolution strategies using Resource Allocation Graphs and Wait-for Graphs.</p>
+        <h6><strong>Objective</strong></h6>
+        <p>
+          To simulate deadlock scenarios in a multithreaded system and implement strategies for detection and resolution.
+        </p>
 
-        <p><strong>Development Approach:</strong> Independently designed algorithms to detect circular waits and 
-          resolve deadlocks via preemption, rollback, and thread termination in a simulated environment.</p>
+        <h6><strong>Development</strong></h6>
+        <ul>
+          <li>Implemented resource allocation and wait-for graphs.</li>
+          <li>Simulated multithreaded execution environments.</li>
+          <li>Tested resolution strategies such as process termination and resource preemption.</li>
+        </ul>
 
-        <p><strong>Challenges & Problem Solved:</strong> Detecting and resolving deadlocks dynamically in a multithreaded 
-          environment. Solved the problem of resource contention in concurrent systems.</p>
+        <h6><strong>Challenges</strong></h6>
+        <ul>
+          <li>Accurately modeling concurrent resource access.</li>
+          <li>Preventing false deadlock detection.</li>
+        </ul>
 
-        <p><strong>What I Learned:</strong> Concurrency control, deadlock detection algorithms, multithreading, 
-          problem-solving, and system simulation techniques.</p>
+        <h6><strong>Learnings</strong></h6>
+        <ul>
+          <li>Operating system concepts in practice.</li>
+          <li>Concurrency control and synchronization.</li>
+          <li>Real-world implications of deadlocks.</li>
+        </ul>
 
-        <p><strong>Tech Stack:</strong> Java, Multithreading, Resource Allocation Graphs, Wait-for Graphs</p>
+        <h6><strong>Tech Stack</strong></h6>
+        <p>Python, Multithreading, Operating Systems Concepts</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
 </div>
+
 
 
 <section id="academics" class="academic-section">
